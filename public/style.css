@@ -1,0 +1,184 @@
+body {
+    margin : 0; 
+    min-height : 100vh; 
+    display : flex; 
+    flex-direction : column;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.logo {
+    font-size : 1.4em;
+}
+.navbar {
+    background-color : #1A6D89; 
+    color : #EEE5E9; 
+    padding : 20px 150px;  
+    display : flex; 
+    align-items : center; 
+    justify-content : space-between; 
+    font-size : 1.2em;
+}
+ul {
+    list-style : none; 
+    display : flex; 
+    gap : 20px;
+}
+ul li {
+    cursor : pointer;
+}
+
+.section {
+    background: url(/bgImg.jpg) no-repeat center center; 
+    background-size: cover; 
+    flex-grow:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section .wrapper .header {
+    padding: 7px;
+  border: 1px solid #ecf0d1;
+  width: max-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.section .wrapper h1 { 
+    margin : 0px;
+    padding: 20px;
+    color: #EEE5E9;
+    text-align: center;
+    background-color: rgba(38, 38, 39, 0.6);
+}
+
+.section .wrapper p {
+    font-weight: bold;
+    color: #EEE5E9;
+    margin-top: 15px;
+}
+
+.section .wrapper button {
+    background-color: #1A6D89;
+    color: #EEE5E9;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 40px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    transition: background-color 1s ease 0s;
+    cursor: pointer;
+    
+}
+
+.section .wrapper button:hover {
+    color: #1A6D89;
+    background-color: #EEE5E9;
+  }
+.services {
+    padding: 50px 150px;
+}
+.services .grid-layout{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: space-between;
+    grid-row-gap : 50px;
+  }
+
+  .services .grid-layout .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    word-spacing : 3px;
+  }
+.services img {
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+}
+.services h1 {
+    padding: 10px 0 70px 0;
+}
+
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: #474748;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.contact form .input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #474748;
+}
+
+.contact form .input input ,  .contact form .input textarea{
+    padding: 7px;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid #b9b9bb;
+    transition:all .3s;
+}
+
+.contact form .input input:focus, .contact form .input textarea:focus {
+    border-bottom: 2px solid #474748;
+
+}
+
+.contact form .button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact form .button button {
+    margin-top: 20px;
+    padding: 10px;
+    outline:none;
+    border: 2px solid #474748;
+    color: #474748;;
+    transition: all .5s;
+}
+.contact form .button button:hover {
+    background-color: #474748;
+    color: white;
+}
+
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.error-page img {
+    height: 300px;
+    margin-bottom: 50px;
+}
